@@ -72,10 +72,10 @@ export function Hero() {
         >
           <div className="relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.02] shadow-[0_0_60px_rgba(18,94,84,0.18)]">
             <img
-              src="/Professional Portrait with Crossed Arms.png"
-              alt="Dhanush portrait"
-              className="h-[540px] w-auto object-cover max-w-full sm:h-[620px]"
-            />
+  src={`${import.meta.env.BASE_URL}Professional Portrait with Crossed Arms.png`}
+  alt="Dhanush portrait"
+  className="h-[540px] w-auto max-w-full object-cover sm:h-[620px]"
+/>
           </div>
         </motion.div>
       </div>
