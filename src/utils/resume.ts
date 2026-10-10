@@ -2,6 +2,7 @@ import { profile } from '../data/portfolio';
 
 type ResumeLink = {
   href: string;
+<<<<<<< HEAD
   download: boolean;
 };
 
@@ -17,5 +18,16 @@ export function getResumeLink(): ResumeLink {
   return {
     href: `mailto:${profile.email}?subject=${encodeURIComponent('Resume request — Dhanush K')}`,
     download: false
+=======
+  download: string;
+};
+
+export function getResumeLink(): ResumeLink {
+  const href = profile.resumeUrl || `${import.meta.env.BASE_URL}Dhanush_Resume21.pdf`;
+
+  return {
+    href,
+    download: 'Dhanush_Resume21.pdf',
+>>>>>>> 79a189032710b2f2c955064a2f9fd2d4eff4919e
   };
 }
